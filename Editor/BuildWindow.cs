@@ -152,6 +152,14 @@ namespace Itch.io_Uploader {
         private static string IncrementVersion() {
             string[] nums = PlayerSettings.bundleVersion.Split('.');
 
+            if (nums.Length == 2) {
+                nums = new[] {
+                    nums[0],
+                    nums[1],
+                    "0"
+                };
+            }
+            
             int first = Int32.Parse(nums[0]);
             int second = Int32.Parse(nums[1]);
             int third = Int32.Parse(nums[2]);
