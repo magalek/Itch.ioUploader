@@ -42,9 +42,6 @@ namespace Itch.io_Uploader {
                     configPath);
                 Selection.activeObject = config;
             }
-            else {
-                Debug.Log("Config found");
-            }
         }
 
         void OnGUI()
@@ -130,8 +127,6 @@ namespace Itch.io_Uploader {
             string fromPath = buildsPath + $"{PlayerSettings.productName} {version}";
             string toPath = buildsPath + $"{PlayerSettings.productName} {version}.zip";
 
-            Debug.Log(toPath);
-            
             try {
                 ZipFile.CreateFromDirectory(fromPath, toPath);
             }
