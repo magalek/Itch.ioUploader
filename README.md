@@ -14,3 +14,8 @@ Tool which allows for uploading game builds to itch.io from Unity editor. Additi
 4. Configure config file
 5. Add scenes to your build settings (like with a normal Unity build)
 6. Use `Build and Upload` option in the tool window
+
+### Images
+
+![config](img/config.png "Config")
+![window](img/window.png "Window")
